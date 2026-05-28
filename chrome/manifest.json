@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "Karotter Admin and Pro Mode",
+  "version": "1.0.0",
+  "author": "SeihyouMirai",
+  "description": "Karotterの管理者モードと課金プランを解放する拡張機能です。",
+  "permissions": ["storage"],
+  "host_permissions": [
+    "<all_urls>",
+    "https://karotter.com/*",
+    "https://*.karotter.com/*",
+    "https://karotter.jp/*",
+    "https://*.karotter.jp/*",
+    "https://karotter.karon.jp/*",
+    "https://*.karotter.karon.jp/*",
+    "https://apikarotter.karon.jp/*",
+    "https://*.apikarotter.karon.jp/*"
+  ],
+  "icons": {
+    "16": "logo/karotter-logo.png",
+    "32": "logo/karotter-logo.png",
+    "48": "logo/karotter-logo.png",
+    "128": "logo/karotter-logo.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://karotter.com/*",
+        "https://www.karotter.com/*",
+        "https://karotter.jp/*",
+        "https://www.karotter.jp/*",
+        "https://karotter.karon.jp/*",
+        "https://www.karotter.karon.jp/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_start",
+      "world": "MAIN"
+    }
+  ]
+}
