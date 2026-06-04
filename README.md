@@ -1,4 +1,4 @@
-# KarotterAdminAndProMode
+# Karotter Admin and Pro
 
 Karotterの管理者パネルと有料機能を解放する拡張機能です
 
